@@ -14,4 +14,10 @@ public interface CompanyTest
      * @return   the result produced by sampleMethod
      */
     int sampleMethod(int y);
+
+    //  simple menu to
+    // add a new project,
+    // find and display a specific project, 
+    // remove a specific project 
+    // display the details of all the projects currently being carried out by the company. 
 }

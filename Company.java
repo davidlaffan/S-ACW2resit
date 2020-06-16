@@ -8,26 +8,53 @@
 public class Company
 {
     // instance variables - replace the example below with your own
-    private int x;
+    //binary tree of projects
+    //linked list of employees in the projects
+    
+        // Add details of a new project 
+
+    // Add details of a new member of a specified project 
+
+    // Display the details for a specific project 
+
+    // Display all the details for all the projects 
+
+    // Remove a particular employee from a specified project 
+
+    // Remove a project from the system 
 
     /**
      * Constructor for objects of class Company
      */
     public Company()
     {
-        // initialise instance variables
-        x = 0;
+
     }
 
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
-    }
+    //functions;
+    
+    public void addDetails(){
+        
+    }// Add details of a new project 
+
+    public void newMember(){
+        
+    }// Add details of a new member of a specified project 
+
+    public void showProjectInfo(){
+        
+    }// Display the details for a specific project 
+
+    public void showProjects(){
+        
+    }// Display all the details for all the projects 
+
+    public void removeTeamMember(){
+        
+    }// Remove a particular employee from a specified project 
+
+    public void removeProject(){
+        
+    }// Remove a project from the system 
+
 }
