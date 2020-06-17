@@ -8,10 +8,10 @@
 public class Company
 {
     // instance variables - replace the example below with your own
-    //binary tree of projects
+    BinarySearchTree projects;//binary tree of projects
     //linked list of employees in the projects
-    
-        // Add details of a new project 
+
+    // Add details of a new project 
 
     // Add details of a new member of a specified project 
 
@@ -32,29 +32,48 @@ public class Company
     }
 
     //functions;
-    
-    public void addDetails(){
-        
+
+    public void addDetails(String n, String start){
+        try{
+            Project in= new Project(n, start);
+            projects.insert(in);
+        }
+        catch (Exception e){
+
+        }
     }// Add details of a new project 
 
-    public void newMember(){
-        
+    public void addDetails(String n, String start, String end){
+        try{
+            Project in= new Project(n, start, end);
+            projects.insert(in);
+        }
+        catch (Exception e){
+
+        }
+    }// Add details of a new project 
+
+    public void newMember(String name,String dept, int id, String project){
+
+        //search by project
+        //new TeamMember(id, dept, name)
     }// Add details of a new member of a specified project 
 
-    public void showProjectInfo(){
+    public void showProjectInfo(String project){
+
         
     }// Display the details for a specific project 
 
     public void showProjects(){
-        
+
     }// Display all the details for all the projects 
 
-    public void removeTeamMember(){
-        
+    public void removeTeamMember(String name, String project){
+
     }// Remove a particular employee from a specified project 
 
-    public void removeProject(){
-        
+    public void removeProject(String project){
+
     }// Remove a project from the system 
 
 }
