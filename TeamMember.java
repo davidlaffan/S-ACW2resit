@@ -8,18 +8,20 @@
 public class TeamMember implements Comparable<TeamMember>
 {
     // instance variables - replace the example below with your own
-    // Name e.g. Joe Bloggs 
+    String name;// Name e.g. Joe Bloggs 
 
-    // Employee Number e.g. 999999 
+    int employeeNumber;// Employee Number e.g. 999999 
 
-    // Division e.g. Web Development 
+    String department;// Division e.g. Web Development 
 
     /**
      * Constructor for objects of class TeamMember
      */
     public TeamMember(int id, String d, String n)
     {
-
+        this.employeeNumber = id;
+        this.department = d;
+        this.name = n;
     }
     
     public int compareTo(TeamMember comparator){
@@ -27,5 +29,10 @@ public class TeamMember implements Comparable<TeamMember>
         return o;
     }
 
-
+    public String toString(){
+        String o = "Name: " + name + "\r\n";
+        o = o + "Department: " + department + "\r\n";
+        o = o + "ID number: " + String.valueOf(employeeNumber) ;
+        return o;
+    }
 }
